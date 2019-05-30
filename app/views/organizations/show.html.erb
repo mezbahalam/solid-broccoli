@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @organization.name %>
+</p>
+<br>
+<%= check_favorite(@organization.id) %>
+<br>
+<br>
+<%= link_to 'Back', organizations_path %>
+<br>
