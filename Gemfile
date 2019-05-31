@@ -35,6 +35,11 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 	gem 'sqlite3', '~> 1.3', '< 1.4'
+	gem 'rspec-rails'
+	gem 'capybara'
+	gem 'selenium-webdriver'
+	gem 'chromedriver-helper'
+	gem 'factory_bot_rails'
 end
 
 group :development do

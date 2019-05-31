@@ -1,4 +1,4 @@
 class Organization < ActiveRecord::Base
 	has_many :favorites
-	has_many :users, through: :favorites
+	has_many :favoritors, through: :favorites, source: :user
 end
