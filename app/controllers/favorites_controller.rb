@@ -12,7 +12,7 @@ class FavoritesController < ApplicationController
 
     respond_to do |format|
       if @favorite.save
-        format.html { redirect_to :back , notice: 'Add as Favorite' }
+        format.html { redirect_to  request.referer , notice: 'Add as Favorite' }
         # format.json { render :show, status: :created, location: @favorite }
       else
         format.html { render :new }
